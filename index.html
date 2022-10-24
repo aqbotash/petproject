@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense checking</title>
+    <!-- Our CSS -->
+    <link  rel ="stylesheet" href="css/bootstrap-grid.css">
+    <link  rel ="stylesheet" href="css/bootstrap.css">
+    <link  rel ="stylesheet" href="css/bootstrap.min.css">
+    <link  rel ="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <p id="motivation">After entering a day, you'll get a quote here!</p>
+
+</header>
+<main>
+    <div class="container center fillform" >
+        <form id = "expense_details_form">
+        <label for = "day">Today is: </label>
+        <input type ="text" id = "day" required>
+        <label for = "name">Activity: </label>
+        <input type ="text" id = "name" required>
+        <label for = "amount">Description: </label>
+        <input type ="text" id = "amount" required>
+        <label for = "photo">Put a link to your mood photo</label>
+        <input type ="url" id = "photo" required>
+        <button type="submit">Add to list</button>
+    </form>
+    </div>
+</main>
+
+<body>
+<div class="container">
+    <div class = "row">
+        <div class="col-lg-6 col-md-6 col-sm-12 hidden-sm">
+            <img id ="mood" src="https://static.miraheze.org/greatcharacterswiki/1/1f/Kid_Sasuke.png">
+        </div>
+        
+        <div id = "money_container" class = "col-lg-6 col-md-6 col-sm-12">
+            <div id ="monday">
+                <div class = "card">
+                    <h2>Hello! I am very glad to see you!</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Our JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+</body>
+
+</html>
